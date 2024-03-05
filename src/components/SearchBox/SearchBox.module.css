@@ -1,0 +1,61 @@
+.searhBoxContainer {
+  max-width: 360px;
+  margin-inline: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .searhBoxContainer {
+    max-width: 510px;
+    width: 510px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .searhBoxContainer {
+    max-width: 770px;
+    width: 770px;
+  }
+}
+
+.titleMobile {
+  margin-bottom: 15px;
+}
+
+.titleTablet {
+  margin-bottom: 15px;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .titleMobile {
+    display: none;
+  }
+  .titleTablet {
+    display: block;
+  }
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  box-sizing: border-box;
+  background: none;
+  margin: 0px;
+  min-width: 0px;
+  padding: 8px 8px;
+  width: 100%;
+  color: rgb(38, 38, 38);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+
+  border: 1.3px solid #d6d8db;
+}
+
+.input:focus {
+  outline: none;
+}

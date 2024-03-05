@@ -1,0 +1,90 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 8px;
+  background-color: white;
+  border: 1.3px solid #d6d8db;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  max-width: 265px;
+  width: 265px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 320px;
+    width: 320px;
+  }
+}
+
+.userInfoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: block;
+  width: 86px;
+  height: 86px;
+  margin-right: 5px;
+  fill: #fcdf16;
+}
+@media only screen and (min-width: 1024px) {
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+  }
+}
+
+.contactInfo {
+  display: flex;
+}
+
+.iconInfo {
+  margin-right: 10px;
+}
+
+.userName {
+  max-width: 150px;
+  margin-bottom: 8px;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+}

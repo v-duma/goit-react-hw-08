@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    gap: 15px;
+    padding: 8px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    gap: 20px;
+    padding: 10px 0;
+  }
+}
+
+.link {
+  padding: 6px;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media only screen and (min-width: 1024px) {
+  .link {
+    padding: 8px;
+  }
+}
+
+.link:hover,
+.link:focus,
+.active {
+  border: 1px solid #fcdf16;
+}
